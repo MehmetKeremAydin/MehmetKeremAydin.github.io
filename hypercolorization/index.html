@@ -127,7 +127,7 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/teaser.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -148,6 +148,10 @@
           <p>
             Hyperspectral cameras face challenging spatial-spectral resolution trade-offs and are more affected by shot noise than RGB photos taken over the same total exposure time. Here, we present a colorization algorithm to reconstruct hyperspectral images from a grayscale guide image and spatially sparse spectral clues. We demonstrate that our algorithm generalizes to lower dimensional models for hyperspectral images, and show that colorizing in a low-rank space reduces compute time and the impact of shot noise. To enhance robustness, we incorporate guided sampling, edge-aware filtering, and dimensionality estimation techniques. Our method surpasses previous algorithms in various performance metrics, including SSIM, PSNR, GFC, and EMD, which we propose as valuable metrics for characterizing hyperspectral image quality. Collectively, these findings provide a promising avenue for overcoming the time-space-wavelength resolution trade-off by reconstructing a dense hyperspectral image from samples obtained by whisk or push broom scanners, as well as computational imaging systems. 
           </p>
+          <img src="static/images/intro_fig.png" alt="HyperColorization Framework Flowchart"/>
+          <div class="subtitle has-text-justified">
+              HyperColorization simplified pipeline with an example image from <a href="https://color2.psych.upenn.edu/hyperspectral/bearfruitgray/bearfruitgray.html" target="_blank">Bear & Fruit dataset</a>. We use a monochromatic image to guide a whisk/push broom scanner or a computational imager to collect spatially sparse spectral samples. These noisy samples are used to estimate the best colorization dimension. Finally, the sparse samples are densified using an optimization-based spectral sample propagation algorithm.
+          </div>
         </div>
       </div>
     </div>
@@ -194,29 +198,6 @@
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
 
 <!-- Video carousel -->
