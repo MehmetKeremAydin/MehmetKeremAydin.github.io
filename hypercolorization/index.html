@@ -58,7 +58,7 @@
               <span class="author-block">
                 <a href="https://www.mkaydin.xyz/" target="_blank">M. Kerem Aydin</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.qiguo.org/join-us" target="_blank">Qi Guo</a><sup>2</sup>,</span>
+                  <a href="https://www.qiguo.org/" target="_blank">Qi Guo</a><sup>2</sup>,</span>
                   <span class="author-block">
                     <a href="https://www.alexander.vision/" target="_blank">Emma Alexander</a><sup>1</sup></span>
                   </div>
@@ -71,7 +71,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-7-10761&id=547804 " target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,7 +82,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://opticapublishing.figshare.com/ndownloader/files/44981263" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -104,7 +104,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/pdf/5478909" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -148,9 +148,11 @@
           <p>
             Hyperspectral cameras face challenging spatial-spectral resolution trade-offs and are more affected by shot noise than RGB photos taken over the same total exposure time. Here, we present a colorization algorithm to reconstruct hyperspectral images from a grayscale guide image and spatially sparse spectral clues. We demonstrate that our algorithm generalizes to lower dimensional models for hyperspectral images, and show that colorizing in a low-rank space reduces compute time and the impact of shot noise. To enhance robustness, we incorporate guided sampling, edge-aware filtering, and dimensionality estimation techniques. Our method surpasses previous algorithms in various performance metrics, including SSIM, PSNR, GFC, and EMD, which we propose as valuable metrics for characterizing hyperspectral image quality. Collectively, these findings provide a promising avenue for overcoming the time-space-wavelength resolution trade-off by reconstructing a dense hyperspectral image from samples obtained by whisk or push broom scanners, as well as computational imaging systems. 
           </p>
+          <!--
           <img src="static/images/intro_fig.png" alt="HyperColorization Framework Flowchart"/>
           <div class="subtitle has-text-justified">
               HyperColorization simplified pipeline with an example image from <a href="https://color2.psych.upenn.edu/hyperspectral/bearfruitgray/bearfruitgray.html" target="_blank">Bear & Fruit dataset</a>. We use a monochromatic image to guide a whisk/push broom scanner or a computational imager to collect spatially sparse spectral samples. These noisy samples are used to estimate the best colorization dimension. Finally, the sparse samples are densified using an optimization-based spectral sample propagation algorithm.
+          -->
           </div>
         </div>
       </div>
@@ -160,21 +162,21 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Image carousel 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container"><h2 class="title">Comparison to Other Hybrid Camera Systems</h2></div>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
       <div class="item">
-        <!-- Your image here -->
+
         <img src="static/images/comphybridfull.png" alt="Spatial Comparison of HyperColorization to SASSI and Cao et al."/>
         <h2 class="subtitle has-text-centered">
           (a) Three test images from (a.1) Harvard, (a.2) KAIST, and (a.3) ICVL datasets. In (a.1) and (a.2), HyperColorization was performed on the low dimensional learned color space, while, in (a.3), HyperColorization was performed on all 519 channels. (b) Visual comparison of spatial reconstructions of hybrid camera systems. SASSI and Cao et al. parameters were set to maximize PSNR (SASSI rank 1, Cao et al. filter sizes 31 with spatial variance of 21 and spectral variance of 0.03, set by grid search) but still result in obvious artifacts.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
+
         <img src="static/images/comp2.jpg" alt="Spectral Comparison of HyperColorization to SASSI and Cao et al. Table comparing results of HyperColorization to SASSI and Cao et al over a dataset."/>
         <h2 class="subtitle has-text-centered">
          
@@ -184,15 +186,16 @@
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+End image carousel -->
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/AydinGuoAlexander_ICCP2023.pdf" width="100%" height="550">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title">Poster</h2>
+      </div>
+      <iframe  src="static/pdfs/AydinGuoAlexander_ICCP2023.pdf" width="100%" height="750">
           </iframe>
         
       </div>
@@ -204,8 +207,26 @@
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>We will share BibTex code here, once the paper is published.</code></pre>
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title">Bibtex</h2>
+      </div>
+      <pre><code>
+        @article{Aydin:24,
+        author = {M. Kerem Aydin and Qi Guo and Emma Alexander},
+        journal = {Opt. Express},
+        keywords = {Computational imaging; Hyperspectral imaging; Image quality; Imaging systems; Shot noise; Spatial resolution},
+        number = {7},
+        pages = {10761--10776},
+        publisher = {Optica Publishing Group},
+        title = {HyperColorization: propagating spatially sparse noisy spectral clues for reconstructing hyperspectral images},
+        volume = {32},
+        month = {Mar},
+        year = {2024},
+        url = {https://opg.optica.org/oe/abstract.cfm?URI=oe-32-7-10761},
+        doi = {10.1364/OE.508017},
+        abstract = {Hyperspectral cameras face challenging spatial-spectral resolution trade-offs and are more affected by shot noise than RGB photos taken over the same total exposure time. Here, we present a colorization algorithm to reconstruct hyperspectral images from a grayscale guide image and spatially sparse spectral clues. We demonstrate that our algorithm generalizes to varying spectral dimensions for hyperspectral images, and show that colorizing in a low-rank space reduces compute time and the impact of shot noise. To enhance robustness, we incorporate guided sampling, edge-aware filtering, and dimensionality estimation techniques. Our method surpasses previous algorithms in various performance metrics, including SSIM, PSNR, GFC, and EMD, which we analyze as metrics for characterizing hyperspectral image quality. Collectively, these findings provide a promising avenue for overcoming the time-space-wavelength resolution trade-off by reconstructing a dense hyperspectral image from samples obtained by whisk or push broom scanners, as well as hybrid spatial-spectral computational imaging systems.},
+        }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
